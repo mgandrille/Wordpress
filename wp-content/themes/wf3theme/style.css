@@ -15,6 +15,42 @@ Tags: one-column, two-columns, right-sidebar, flexible-header, accessibility-rea
 
 /* stylelint-disable selector-list-comma-newline-after */
 
+html {
+    background: #6dc4b8;
+}
+
+body {
+    background: #f5efe0;
+}
+
+.container-fluid {
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #bd22b5;
+}
+
+h3.blog-post-title {
+    font-size: 1.5rem;
+}
+
+a {
+    color: grey;
+}
+a:hover {
+    color: #bd22b5;
+    font-weight: bold;
+    text-decoration: wavy;
+}
+
+.widget > ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+
 .bd-placeholder-img {
     font-size: 1.125rem;
     text-anchor: middle;
@@ -30,11 +66,55 @@ Tags: one-column, two-columns, right-sidebar, flexible-header, accessibility-rea
     }
 }
 
-h1, h2, h3 {
-    color: red;
+
+/**** HEADER ****/
+header {
+    background: #6dc4b8;
 }
 
-.widget > ul {
-    padding: 0;
-    list-style-type: none;
+header.blog-header {
+    border-bottom: 1px solid #6dc4b8 !important;
+}
+
+/**** MENU ****/
+.nav-scroller {
+    background: #6dc4b8;
+}
+
+.nav-scroller a {
+    color: #bd22b5;
+    font-weight: bold;
+}
+
+.nav-scroller a:hover {
+    text-decoration: underline;
+}
+
+.menu-menu-principal-container {
+    width: 100%;
+}
+
+.menu-menu-principal-container ul {
+    display: flex;
+    text-transform: uppercase;
+    justify-content: space-around;
+}
+
+li {
+    display: block;
+}
+
+
+/**** CARD ****/
+.card-body span {
+    font-size: small;
+    font-style: italic;
+}
+
+.blog-post p {
+    margin-bottom: 0;
+}
+
+.blog-post .resume {
+    margin-top: 1rem;
 }
