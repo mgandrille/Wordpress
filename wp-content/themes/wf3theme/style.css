@@ -51,22 +51,6 @@ a:hover {
 }
 
 
-.bd-placeholder-img {
-    font-size: 1.125rem;
-    text-anchor: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
-@media (min-width: 768px) {
-    .bd-placeholder-img-lg {
-        font-size: 3.5rem;
-    }
-}
-
-
 /**** HEADER ****/
 header {
     background: #6dc4b8;
@@ -98,6 +82,7 @@ header.blog-header {
     display: flex;
     text-transform: uppercase;
     justify-content: space-around;
+    padding: 0;
 }
 
 li {
@@ -117,4 +102,42 @@ li {
 
 .blog-post .resume {
     margin-top: 1rem;
+}
+
+.card {
+    padding: .5rem 0;
+}
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
+
+
+
+/**** MAIN CONTENT ****/
+h2.border-bottom {
+    border-bottom: 1px solid #6dc4b8 !important;
+}
+
+
+/**** SIDEBAR ****/
+.about {
+    background: #6dc4b8 !important;
+}
+
+/**** FOOTER ****/
+footer.blog-footer {
+    background: #6dc4b8;
+    color: black;
 }

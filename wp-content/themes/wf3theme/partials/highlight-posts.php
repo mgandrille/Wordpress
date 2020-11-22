@@ -25,7 +25,7 @@
                 </div>
 
                 <div class="col-auto d-none d-lg-block">
-                    <img src="<?php the_post_thumbnail_url() ?>" alt="" class="bd-placeholder-img" width="200" height="250">
+                    <img src="<?php the_post_thumbnail_url() ?>" alt="" class="bd-placeholder-img" width="200" height="230">
                 </div>
             </div>
         </div>

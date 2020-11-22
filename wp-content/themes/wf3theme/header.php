@@ -21,15 +21,11 @@
 
 <body>
     <div class="container-fluid">
-        <header class="blog-header py-3">
-            <div class="flex-nowrap justify-content-between align-items-center">
-                <div class="col-4 offset-4 text-center">
-                    <a class="blog-header-logo text-dark" href="<? bloginfo('wpurl'); ?>">
-                        <?php bloginfo('name') ?>
-                    </a>
-                    <p><small><?php bloginfo('description') ?></small></p>
-                </div>
-            </div>
+        <header class="blog-header text-center py-3">
+            <a class="blog-header-logo text-dark" href="<? bloginfo('wpurl'); ?>">
+                <?php bloginfo('name') ?>
+            </a>
+            <p><small><?php bloginfo('description') ?></small></p>
         </header>
 
         <div class="nav-scroller py-1 mb-2">

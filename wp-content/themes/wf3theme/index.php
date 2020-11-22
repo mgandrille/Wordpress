@@ -15,29 +15,27 @@
 			<div class="blog-post">
 				<?php if ( have_posts() ) : ?>
 				<?php while ( have_posts() ) : the_post(); ?>
-				<div class="blog-post">
-					<h3 class="blog-post-title"><?php the_title(); ?></h3>
-					<p> Catégories : <?php the_category($separator = ' - '); ?> <br>
-					<!-- <?php the_shortlink('Cliquez ici pour voir la page de l’article') ?> -->
-					<!-- <a href="<?php echo get_permalink($ID); ?>">This is a link</a> -->
-					<p class="blog-post-meta">Le <?php echo get_the_date(); ?> par <a href="#"><?php the_author(); ?></a></p>
+                    <div class="blog-post">
+                        <h3 class="blog-post-title"><?php the_title(); ?></h3>
+                        <p> Catégories : <?php the_category($separator = ' - '); ?> <br>
+                        <!-- <?php the_shortlink('Cliquez ici pour voir la page de l’article') ?> -->
+                        <!-- <a href="<?php echo get_permalink($ID); ?>">This is a link</a> -->
+                        <p class="blog-post-meta">Le <?php echo get_the_date(); ?> par <a href="#"><?php the_author(); ?></a></p>
 
-					<p class="resume">
-                        <?php the_excerpt(); ?>
-                        <a href="<?php echo get_permalink(); ?>">Lire la suite</a>
-                    </<p>
-
-					<!-- <p><?php //the_tags('Tags : '); ?></p> -->
-				</div><!-- /.blog-post -->
+                        <p class="resume">
+                            <?php the_excerpt(); ?>
+                            <a href="<?php echo get_permalink(); ?>">Lire la suite</a>
+                        </<p>
+                    </div><!-- /.blog-post -->
 				<?php endwhile; ?>
 				<?php endif; ?>
 			</div><!-- /.blog-post -->
 
 
-			<nav class="blog-pagination">
+			<!-- <nav class="blog-pagination">
 				<a class="btn btn-outline-primary" href="#">Older</a>
 				<a class="btn btn-outline-secondary disabled" href="#" tabindex="-1" aria-disabled="true">Newer</a>
-			</nav>
+			</nav> -->
 
 		</div><!-- /.blog-main -->
 
